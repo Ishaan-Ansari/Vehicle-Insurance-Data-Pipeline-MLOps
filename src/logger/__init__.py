@@ -40,3 +40,7 @@ def setup_logger(app_name: str, log_dir: str = 'logs'):
 
 loggerdemo = setup_logger('demo')
 loggerConfig = setup_logger('configuration')
+loggerDI = setup_logger('data_ingestion')
+
+
+loggerMisc = setup_logger('demo')
