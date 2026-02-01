@@ -5,6 +5,8 @@ description = "An MLOps project for productionizing models"
 authors = [{name = "Ishaan Ansari", email = "mihansari.jh@gmail.com"}]
 dependencies = [
     "certifi>=2026.1.4",
+    "numpy>=2.4.2",
+    "pandas>=3.0.0",
     "pymongo>=4.16.0",
 ]
 
