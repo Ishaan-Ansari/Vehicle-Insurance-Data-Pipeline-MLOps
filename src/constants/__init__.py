@@ -8,7 +8,7 @@ load_dotenv()
 DATABASE_NAME = "Proj1"
 COLLECTION_NAME = "Proj1-Data"
 # MONGODB_URL_KEY = os.getenv("MONGODB_URL_KEY")
-MONGODB_URL_KEY = "mongodb+srv://admin:admin@cluster0.5libv89.mongodb.net/?appName=Cluster0"
+MONGODB_URL_KEY = os.getenv("MONGODB_URL_KEY")
 
 PIPELINE_NAME: str = ""
 ARTIFACT_DIR: str = "artifact"
@@ -25,7 +25,7 @@ TEST_FILE_NAME: str = "test.csv"
 SCHEMA_FILE_PATH = os.path.join("config", "schema.yaml")
 
 
-AWS_ACCESS_KEY_ID_ENV_KEY = os.getenv("AWS_ACCESS_KEY_ID_ENV_KEY")
+AWS_ACCESS_KEY_ID_ENV_KEY = os.getenv("AWS_ACCESS_KEY_ID")
 AWS_SECRET_ACCESS_KEY_ENV_KEY = os.getenv("AWS_SECRET_ACCESS_KEY_ENV_KEY")
 REGION_NAME = "us-east-1"
 
