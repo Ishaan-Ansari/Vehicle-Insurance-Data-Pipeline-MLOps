@@ -46,6 +46,6 @@ loggerDT = setup_logger('data_transformation')
 loggerMT = setup_logger('model_trainer')
 loggerME = setup_logger('model_evaluation')
 loggerMP = setup_logger('model_pusher')
-
+loggerCL = setup_logger('cloud')
 
 loggerMisc = setup_logger('demo')
