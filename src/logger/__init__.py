@@ -43,6 +43,9 @@ loggerConfig = setup_logger('configuration')
 loggerDI = setup_logger('data_ingestion')
 loggerDV = setup_logger('data_validation')
 loggerDT = setup_logger('data_transformation')
+loggerMT = setup_logger('model_trainer')
+loggerME = setup_logger('model_evaluation')
+loggerMP = setup_logger('model_pusher')
 
 
 loggerMisc = setup_logger('demo')
