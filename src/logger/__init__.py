@@ -41,6 +41,8 @@ def setup_logger(app_name: str, log_dir: str = 'logs'):
 loggerdemo = setup_logger('demo')
 loggerConfig = setup_logger('configuration')
 loggerDI = setup_logger('data_ingestion')
+loggerDV = setup_logger('data_validation')
+loggerDT = setup_logger('data_transformation')
 
 
 loggerMisc = setup_logger('demo')
