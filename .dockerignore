@@ -44,6 +44,13 @@ web/files/*
 Vagrantfile
 pimple.json
 
+artifact
+venv
+env
+template
+demo.py
+notebook
+
 !vendor
 !app/gen-src/GeneratedNodeSources/.gitignore
 !app/gen-src/Proxies/.gitignore
