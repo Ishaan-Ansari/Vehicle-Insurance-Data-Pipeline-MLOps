@@ -1,8 +1,8 @@
 import sys
 from src.entity.config_entity import VehiclePredictorConfig
 from src.entity.s3_estimator import Proj1Estimator
-from src.exception import MyException
-from src.logger import logging
+from src.exception import CustomException
+from src.logger import loggerPP as logging
 from pandas import DataFrame
 
 
@@ -38,7 +38,7 @@ class VehicleData:
             self.Vehicle_Damage_Yes = Vehicle_Damage_Yes
 
         except Exception as e:
-            raise MyException(e, sys) from e
+            raise CustomException(e, sys) from e
 
     def get_vehicle_input_data_frame(self)-> DataFrame:
         """
@@ -50,7 +50,7 @@ class VehicleData:
             return DataFrame(vehicle_input_dict)
         
         except Exception as e:
-            raise MyException(e, sys) from e
+            raise CustomException(e, sys) from e
 
 
     def get_vehicle_data_as_dict(self):
@@ -79,7 +79,7 @@ class VehicleData:
             return input_data
 
         except Exception as e:
-            raise MyException(e, sys) from e
+            raise CustomException(e, sys) from e
 
 class VehicleDataClassifier:
     def __init__(self,prediction_pipeline_config: VehiclePredictorConfig = VehiclePredictorConfig(),) -> None:
@@ -89,7 +89,7 @@ class VehicleDataClassifier:
         try:
             self.prediction_pipeline_config = prediction_pipeline_config
         except Exception as e:
-            raise MyException(e, sys)
+            raise CustomException(e, sys)
 
     def predict(self, dataframe) -> str:
         """
@@ -107,4 +107,4 @@ class VehicleDataClassifier:
             return result
         
         except Exception as e:
-            raise MyException(e, sys)
+            raise CustomException(e, sys)

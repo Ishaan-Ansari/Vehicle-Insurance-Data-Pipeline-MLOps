@@ -47,5 +47,6 @@ loggerMT = setup_logger('model_trainer')
 loggerME = setup_logger('model_evaluation')
 loggerMP = setup_logger('model_pusher')
 loggerCL = setup_logger('cloud')
+loggerPP = setup_logger('prediction_pipeline')
 
 loggerMisc = setup_logger('demo')
